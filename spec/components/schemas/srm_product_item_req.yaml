@@ -1,0 +1,100 @@
+type: object
+properties:
+  shortName:
+    type: string
+    description: Feature name
+  productStatus:
+    type: integer
+    description: Status
+  salePoint:
+    type: number
+    description: Product points
+  exchangePeriod:
+    type: integer
+    description: 1-1 Exchange period (day)
+  attributeValueCode:
+    type: string
+    description: Property (color)
+  name:
+    type: string
+    description: Name
+  saleOnlineOnly:
+    type: boolean
+    description: Sale online only
+    default: false
+  defaultCode:
+    type: string
+    description: Default code
+  note:
+    type: string
+    description: Note
+  warrantyStampQty:
+    type: integer
+    description: Number of warranty stamps
+  uomName:
+    type: string
+    description: Unit
+  supportDelivery:
+    type: boolean
+    description: Support delivery
+    default: false
+  productBrandCode:
+    type: string
+    description: Brand code
+  isService:
+    type: boolean
+    description: Product service
+    default: false
+  tracking:
+    type: string
+    description: tracking
+  uomPoName:
+    type: string
+    description: Purchase unit of measurement
+  categCode:
+    type: string
+    description: Category
+  warrantyPeriod:
+    type: number
+    description: Warranty period
+  warrantyNote:
+    type: string
+    description: Warranty notes
+  costPriceCalc:
+    type: boolean
+    description: Calculate cost price
+    default: false
+  barcode:
+    type: string
+    description: Barcode
+  type:
+    example: consu
+    enum:
+      - consu
+      - product
+    type: string
+    description: >-
+      Product type:- consu: Product does not manage inventory (Allow to sell
+      negative)- product: Product with inventory management and storage
+  isUncounted:
+    type: boolean
+    description: No tally
+    default: false
+  partNumber:
+    type: string
+    description: Part Number
+required:
+  - barcode
+  - categCode
+  - costPriceCalc
+  - defaultCode
+  - isService
+  - isUncounted
+  - name
+  - productBrandCode
+  - saleOnlineOnly
+  - supportDelivery
+  - tracking
+  - type
+  - uomName
+  - uomPoName

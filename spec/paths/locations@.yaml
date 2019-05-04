@@ -1,0 +1,15 @@
+get:
+  responses:
+    '200':
+      description: Successful Return
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/location_list_res'
+  operationId: get_locations
+  tags:
+    - Locations
+  summary: Get list all locations
+  description: ':return: list[Location] - list all locations'

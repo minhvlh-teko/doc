@@ -1,0 +1,11 @@
+type: object
+properties:
+  product_biz_type_code:
+    type: string
+    description: Type of product business
+  location_code:
+    type: string
+    description: Branch
+  warehouse_code:
+    type: string
+    description: Warehouse code

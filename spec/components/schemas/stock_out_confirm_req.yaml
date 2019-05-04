@@ -1,0 +1,20 @@
+type: object
+properties:
+  createdAt:
+    type: string
+    description: Confirmation time
+    format: date-time
+  staffId:
+    type: integer
+    description: Staff ID
+  requestCode:
+    type: string
+    description: Request code
+  orderID:
+    type: string
+    description: Order ID
+required:
+  - createdAt
+  - orderID
+  - requestCode
+  - staffId

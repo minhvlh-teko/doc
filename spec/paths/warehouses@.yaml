@@ -1,0 +1,15 @@
+get:
+  responses:
+    '200':
+      description: Successful Return
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/warehouse_list_res'
+  operationId: get_warehouses
+  tags:
+    - Warehouses
+  summary: Get list all warehouses
+  description: ':return: list[Warehouse]'

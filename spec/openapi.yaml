@@ -81,9 +81,29 @@ tags:
 
   - name: Product Listing
     description: Provides apis for Product Listing APIs
+  - name: Branches
+    description: Branch operations
+  - name: Warehouses
+    description: Warehouse operations
+  - name: Locations
+    description: Location operations
+  - name: Stock Quantities
+    description: StockQuant operations
+  - name: Stock Out
+    description: StockOut operations
+  - name: SRM Products
+    description: SRM product operations
+  - name: Internal
+    description: Internal API operations
+  - name: Eton
+    description: Eton APIs
+  - name: Teko Biz Type Location Detail
+    description: Teko Biz Type Location Detail
+
 servers:
   - url: "http://example.com/api/v1"
   - url: "https://example.com/api/v1"
+  - url: /api/v2
 x-tagGroups:
   - name: Offline Sales
     tags:
@@ -97,3 +117,20 @@ x-tagGroups:
   - name: Price And Promotions
     tags:
       - Price & Promotion API
+  - name: WMS
+    tags:
+      - Branches
+      - Warehouses
+      - Locations
+      - Stock Quantities
+      - Stock Out
+      - Teko Biz Type Location Detail
+  - name: SRM
+    tags:
+      - SRM Products
+  - name: Internal API
+    tags:
+      - Internal
+  - name: Eton API
+    tags:
+      - Eton

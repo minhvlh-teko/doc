@@ -1,0 +1,11 @@
+type: object
+properties:
+  message:
+    type: string
+    description: Error message
+  code:
+    type: integer
+    description: Error code
+required:
+  - code
+  - message

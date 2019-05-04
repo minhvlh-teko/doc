@@ -1,0 +1,25 @@
+type: object
+properties:
+  productBizType:
+    type: string
+    description: Type of product business
+  available:
+    type: number
+    description: >-
+      Available quantity = Actual inventory number - stock held = onHand-
+      reserved
+  location:
+    type: string
+    description: Branch
+  warehouse:
+    type: string
+    description: Warehouse code
+  onHand:
+    type: number
+    description: Actual quantity in stock
+  storeCode:
+    type: string
+    description: Asia region type
+  reserved:
+    type: number
+    description: Stock held quantity

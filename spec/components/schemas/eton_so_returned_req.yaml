@@ -1,0 +1,11 @@
+type: object
+properties:
+  type:
+    type: string
+    description: Return type
+  items:
+    type: array
+    items:
+      allOf:
+        - $ref: '#/components/schemas/eton_product'
+      description: List of product information to be processed

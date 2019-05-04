@@ -1,0 +1,25 @@
+get:
+  operationId: get_teko_biz_type_location_detail
+  parameters:
+    - name: warehouses
+      in: query
+      description: Warehouses code
+      style: form
+      explode: false
+      schema:
+        type: array
+        items:
+          type: string
+  responses:
+    '200':
+      description: Successful Return
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/teko_biz_type_location_detail_list_res'
+  description: ':return: list[teko biz type location detail]'
+  tags:
+    - Teko Biz Type Location Detail
+  summary: Get list teko biz type location detail

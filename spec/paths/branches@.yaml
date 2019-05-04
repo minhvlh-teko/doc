@@ -1,0 +1,15 @@
+get:
+  responses:
+    '200':
+      description: Successful Return
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/branch_list_res'
+  operationId: get_branches
+  tags:
+    - Branches
+  summary: Get list all branches
+  description: ':return: list[Branch] - list all branches'

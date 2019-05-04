@@ -1,0 +1,20 @@
+type: object
+properties:
+  requestType:
+    type: integer
+    description: Request type
+  createdAt:
+    type: string
+    description: Request time
+    format: date-time
+  requestCode:
+    type: string
+    description: Request code
+  orderID:
+    type: string
+    description: 'Order code (if in other export type, orderID = 0)'
+required:
+  - createdAt
+  - orderID
+  - requestCode
+  - requestType

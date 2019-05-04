@@ -1,0 +1,32 @@
+parameters:
+  - name: id
+    in: path
+    required: true
+    schema:
+      type: integer
+delete:
+  responses:
+    '200':
+      description: Successful Delete
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/error_res'
+  operationId: delete_srm_product_item
+  summary: Delete a product
+  tags:
+    - SRM Products
+put:
+  responses:
+    '200':
+      description: Successful Update
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/error_res'
+  operationId: put_srm_product_item
+  tags:
+    - SRM Products
+  summary: Update a product
+  requestBody:
+    $ref: '#/components/requestBodies/srm_product_item_req'
